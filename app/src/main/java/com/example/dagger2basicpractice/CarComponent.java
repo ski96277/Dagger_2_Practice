@@ -2,8 +2,8 @@ package com.example.dagger2basicpractice;
 
 import dagger.Component;
 
-@Component
+@Component  (modules = WheelsModule.class)
 public interface CarComponent {
-    Car getCar();
+     Car getCar();
     void inject(MainActivity mainActivity);
 }
